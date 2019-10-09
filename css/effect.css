@@ -1,0 +1,35 @@
+section article:nth-of-type(1) img 
+{  
+    width: 30vw;
+    height: 70vh;
+}
+section{
+    width: 30vw;
+    height: 70vh;
+}
+section article{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    top:100%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.37);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+}
+section:hover .overlay {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+   
+}
+.overlay h1{
+color: white;
+}
